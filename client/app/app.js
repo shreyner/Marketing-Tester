@@ -11,5 +11,3 @@ let App = angular.module('marketingTester',[
   'checklist-model'
 ])
 .directive('app',AppComponent);
-
-console.log('I\'am ready!');

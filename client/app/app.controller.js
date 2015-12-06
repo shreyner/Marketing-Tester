@@ -1,24 +1,23 @@
 class AppController {
   constructor() {
-    this.UserData = {"userName":false,"count":0,"CorrectAnswers":0}
+    this.UserData = {"userName":false,"count":0,"CorrectAnswers":0};
     this.listQuestions = require('./listQuestions.json');
-
+    this.ans="";
 
   }
 
   setDataForm(name){
     this.UserData['userName'] = name;
-    console.info('Set data form');
   }
 
   setReset(){
     this.UserData = {"userName":false,"count":0,"CorrectAnswers":0}
-    console.info('Reset')
   }
 
   checkAnswer(array1,array2){
     (array1.length === this.compareArray(array1,array2))?this.UserData['CorrectAnswers']++:null;
     this.UserData['count'] = this.UserData['count'] + 1;
+    this.ans="";
   }
 
   compareArray(array1,array2){

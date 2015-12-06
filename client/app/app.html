@@ -5,7 +5,7 @@
     <div ng-if="!app.UserData['userName']">
       <h1>Marketing Tester!</h1>
       <p class="text-muted">
-        Тест Основы маркетинга.
+        Тест на основы маркетинга.
       </p>
       <div class="form-inline">
         <div class="input-group">
@@ -23,7 +23,7 @@
         <h2 bo-text="questions.question"></h2>
         <div ng-repeat="answer in questions.answer">
           <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox2" checklist-model="app.ans" checklist-value="answer['id']" ng-model="ans"><span bo-text="answer['message']"></span>
+            <input type="checkbox" id="inlineCheckbox2" checklist-model="ans" checklist-value="answer['id']" ng-model="ans"><span bo-text="answer['message']"></span>
           </label>
         </div>
         <br>
@@ -35,7 +35,7 @@
       <h3>Ваш результат, <strong bo-text="app.UserData['userName']"></strong></h3>
       <p><span bo-text="app.UserData['CorrectAnswers']"></span>/59</p>
       <br>
-      <button class="btn btn-primary btn-lg" ng-click="app.setReset()" type="button">Начать с начло</button>
+      <button class="btn btn-primary btn-lg" ng-click="app.setReset()" type="button">Начать с начла</button>
     </div>
 
   </div>
